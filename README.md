@@ -15,5 +15,7 @@ Gettings Started:
 Run chefspec test:
 ------------------
 ```
+cd cookbooks/web_application
+bundle install
 rspec --color
 ```

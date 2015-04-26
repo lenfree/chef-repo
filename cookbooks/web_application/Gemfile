@@ -1,0 +1,12 @@
+source 'https://rubygems.org/'
+
+gem 'berkshelf'
+
+group :unit do
+  gem 'rubocop',          '~> 0.24', '>= 0.24.0'
+  gem 'chefspec',         '~> 4.0'
+  gem 'guard',            '~> 2.6'
+  gem 'guard-rubocop',    '~> 1.0'
+  gem 'guard-rspec',      '~> 4.3'
+  gem 'guard-chef'
+end
