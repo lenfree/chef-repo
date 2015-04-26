@@ -20,7 +20,7 @@ describe 'web_application::webserver' do
 
     it 'should contain custom Apache root directory' do
       expect(chef_run).to create_directory('/srv/apache/customers').with(recursive: true)
-   end
+    end
 
     it 'should have application index.php' do
       expect(chef_run).to create_template('/srv/apache/customers/index.php').with(mode: '0644', owner: 'web_app', group: 'web_app')
