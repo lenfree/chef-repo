@@ -8,3 +8,6 @@
 !cookbooks/README.md
 
 *.swp
+*bin/
+*gems/
+*bundle
