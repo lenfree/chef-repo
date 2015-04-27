@@ -10,7 +10,7 @@ describe 'web_application::user' do
   context 'create application user' do
     let(:chef_run) { ChefSpec::SoloRunner.converge(described_recipe) }
 
-    it 'should add group  web_admin' do
+    it 'should add group web_admin' do
       expect(chef_run).to create_group('web_admin')
     end
 

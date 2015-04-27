@@ -19,11 +19,11 @@ describe 'web_application::webserver' do
     end
 
     it 'should contain custom Apache root directory' do
-      expect(chef_run).to create_directory('/srv/apache/customers').with(recursive: true)
+      expect(chef_run).to create_directory('/srv/apache/customers').with(recursive: true) # rubocop:disable all
     end
 
     it 'should have application index.php' do
-      expect(chef_run).to create_template('/srv/apache/customers/index.php').with(mode: '0644', owner: 'web_app', group: 'web_app')
+      expect(chef_run).to create_template('/srv/apache/customers/index.php').with(mode: '0644', owner: 'web_app', group: 'web_app') # rubocop:disable all
     end
 
     it 'should include apache2 cookbook default recipe' do

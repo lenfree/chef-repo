@@ -1,0 +1,13 @@
+DEPENDENCIES
+  web_application
+    path: .
+    metadata: true
+
+GRAPH
+  apache2 (3.0.1)
+    iptables (>= 0.0.0)
+    logrotate (>= 0.0.0)
+  iptables (1.0.0)
+  logrotate (1.9.1)
+  web_application (0.1.0)
+    apache2 (~> 3.0.1)

@@ -8,7 +8,7 @@ require 'spec_helper'
 
 describe 'web_application::default' do
   before do
-    stub_command("/usr/sbin/apache2 -t").and_return(true)
+    stub_command('/usr/sbin/apache2 -t').and_return(true)
   end
   context 'web application cookbook' do
     let(:chef_run) { ChefSpec::SoloRunner.converge(described_recipe) }

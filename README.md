@@ -17,5 +17,6 @@ Run chefspec test:
 ```
 cd cookbooks/web_application
 bundle install
-rspec --color
+gem install bundler -v '1.9.4' - * might need to install this globally.
+bundle exec guard
 ```
